@@ -80,7 +80,7 @@ const Header = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="lg:hidden overflow-hidden flex flex-col items-center gap-4 bg-white dark:bg-gray-900 w-full py-5 rounded-b-lg"
+            className="lg:hidden overflow-hidden flex flex-col items-center gap-4 bg-black/10 backdrop-blur-md dark:bg-black/10 w-full py-5 rounded-b-lg"
           >
             {['Home', 'About', 'Projects', 'Contact'].map((item) => (
               <a

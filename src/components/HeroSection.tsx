@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section className="h-screen bg-gradient-to-b from-black to-[#020130] flex xl-flex-row flex-col-reverse items-center justify-center relative overflow-hidden">
       {/* Background Spline */}
       <div className="absolute bottom-[-5%] scale-120 z-1 sm:h-full sm:w-full h-full w-full">
-          <Spline scene="https://prod.spline.design/ZS9QKnRC4D1fPmGJ/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/ZS9QKnRC4D1fPmGJ/scene.splinecode" />
       </div>
 
       <div className="flex flex-col text-center px-4 max-w-xl z-10 sm:text-left">
@@ -17,10 +17,10 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeIn" }}
-          className="text-4xl md:text-6xl font-bold mb-4" 
+          className="text-4xl md:text-6xl font-bold mb-4"
           style={{ fontFamily: "var(--font-primary)" }}
         >
-          Vat Vannaden<span className="text-blue-600">.</span>
+          Vat Vannaden<span className="text-blue-500">.</span>
         </motion.h1>
 
         <motion.h2
@@ -40,10 +40,7 @@ const HeroSection = () => {
           className="text-gray-400 mb-8"
           style={{ fontFamily: "var(--font-secondary)" }}
         >
-          An aspiring full-stack developer passionate about crafting innovative
-          PROJECTS, prioritizing creativity and efficiency. Proficient in web/software
-          developing and UI/UX design, creating seamless digital experiences.
-          CONTACT me to explore collaboration opportunities or learn more ABOUT me.
+          I’m a full-stack developer and UI/UX designer who loves turning ideas into practical, creative solutions. I’m always looking for opportunities to grow and expand my skills, and I focus on building innovative projects that blend great design with solid functionality. Let’s connect if you’re interested in collaborating or want to learn more about my work.
         </motion.p>
 
         <div className="flex flex-col sm:items-start items-center sm:justify-start justify-center w-full">
