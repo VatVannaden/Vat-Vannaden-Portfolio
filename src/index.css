@@ -16,3 +16,15 @@ body {
   --font-primary: 'Space Grotesk', sans-serif;
   --font-secondary: 'Manrope', 'sans-serif';
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-primary);
+}
+
+p, span {
+  font-family: var(--font-secondary);
+}

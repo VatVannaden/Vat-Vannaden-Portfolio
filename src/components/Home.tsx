@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 
 
-const HeroSection = () => {
+const Home = () => {
   return (
     <section className="h-screen bg-gradient-to-b from-black to-[#020130] flex xl-flex-row flex-col-reverse items-center justify-center relative overflow-hidden">
       {/* Background Spline */}
@@ -103,4 +103,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Home;
