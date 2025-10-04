@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { NavLink } from 'react-router-dom';
+import icon from '../assets/ryo.png';
 
 const navItems = [
   { name: 'Home', path: '/' },
@@ -35,10 +36,10 @@ const Header = () => {
           className="flex items-center"
         >
           <NavLink to="/" className="flex items-center">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-r from-gray-500 to-gray-100 flex items-center justify-center text-blue-600 font-bold text-xl mr-3 ml-10">
-              D
+            <div className="h-10 w-10 flex items-center justify-center mr-3 ml-10">
+              <img src={icon} alt="icon" className="w-full h-full object-cover rounded-xl" />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-gray-300 to-gray-100 bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-gradient-to-r from-gray-600 to-gray-100 bg-clip-text text-transparent">
               VatVannaden
             </span>
           </NavLink>

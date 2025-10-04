@@ -1,18 +1,17 @@
-import Spline from '@splinetool/react-spline';
 import { motion } from 'framer-motion'
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import ParticlesBg from './ParticlesBg'
 
 
 const Home = () => {
   return (
     <section className="h-screen bg-gradient-to-b from-black to-[#020130] flex xl-flex-row flex-col-reverse items-center justify-center relative overflow-hidden">
-      {/* Background Spline */}
-      <div className="absolute bottom-[-5%] scale-120 z-1 sm:h-full sm:w-full h-full w-full">
-        <Spline scene="https://prod.spline.design/ZS9QKnRC4D1fPmGJ/scene.splinecode" />
+      {/* Background */}
+      <div className='fixed inset-0 pointer-events-none' style={{ zIndex: 0 }}>
+        <ParticlesBg id='Background' />
       </div>
 
-      <div className="flex flex-col text-center px-4 max-w-xl z-10 sm:text-left">
-
+      <div className="flex flex-col text-center px-4 max-w-xl sm:text-left">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -30,7 +29,7 @@ const Home = () => {
           className="text-lg md:text-2xl font-semibold text-gray-300 mb-6"
           style={{ fontFamily: "var(--font-primary)" }}
         >
-          Developer & UI/UX Designer
+          Developer & UX/ UI Designer
         </motion.h2>
 
         <motion.p
@@ -40,10 +39,10 @@ const Home = () => {
           className="text-gray-400 mb-8"
           style={{ fontFamily: "var(--font-secondary)" }}
         >
-          I’m a full-stack developer and UI/UX designer who loves turning ideas into practical, creative solutions. I’m always looking for opportunities to grow and expand my skills, and I focus on building innovative projects that blend great design with solid functionality. Let’s connect if you’re interested in collaborating or want to learn more about my work.
+          Full-stack developer & UX/UI designer passionate about creating intuitive, functional, and beautifully designed digital solutions. Always learning, always building — let’s connect and create something great together.
         </motion.p>
 
-        <div className="flex flex-col sm:items-start items-center sm:justify-start justify-center w-full">
+        <div className="flex flex-col sm:items-start items-center sm:justify-start justify-center w-full relative z-10">
           <motion.a
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -54,8 +53,9 @@ const Home = () => {
               delay: 1,
               duration: 1,
             }}
-            href="#"
-            className="w-1/3 text-center border border-gray-400 px-6 py-3 text-gray-300 hover:bg-white hover:text-black transition duration-300 justi items-center"
+            href="/Vat_Vannaden_CV.pdf"
+            download="Vat_Vannaden_CV.pdf"
+            className="w-1/3 text-center border border-gray-400 px-6 py-3 text-gray-300 hover:bg-white hover:text-black transition duration-300 items-center"
             style={{ fontFamily: "var(--font-primary)" }}
           >
             View Full Resume

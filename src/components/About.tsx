@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
-import Profile from '../assets/image.png';
+import Profile from '../assets/ryo.png';
 import Spotify from '../assets/icons/spotify.png';
 import Manga from '../assets/icons/comic.png';
 import Game from '../assets/icons/game.png';
 import Movie from '../assets/icons/film-reel.png';
 import RUPP from '../assets/icons/rupp_logo.png';
 import FirstMay from '../assets/icons/1st_may.png';
+import ParticlesBg from './ParticlesBg'
 
 const About = () => {
     const interests = [
@@ -36,8 +37,8 @@ const About = () => {
     const designSkills = [
         { name: "Figma", level: "92%" },
         { name: "Adobe XD", level: "65%" },
-        { name: "Sketch", level: "78%" },
-        { name: "Photoshop", level: "30%" }
+        { name: "Sketch", level: "75%" },
+        { name: "Photoshop", level: "60%" }
     ];
     const databaseCloudTech = ["MySQL", "Firebase", "Docker", "Git"];
 
@@ -57,8 +58,11 @@ const About = () => {
 
 
     return (
-        <div className="h-screen bg-gray-950 text-white overflow-y-hidden">
+        <div className="h-screen bg-gradient-to-b from-black to-[#020130] text-white overflow-y-hidden ">
             <div className="flex flex-col lg:flex-row w-full h-screen justify-center py-8 lg:py-20 px-4 lg:px-20 lg:space-x-20 space-y-8 lg:space-y-0">
+                <div className='fixed inset-0 pointer-events-none' style={{ zIndex: 0 }}>
+                    <ParticlesBg id='Background' />
+                </div>
                 {/* Left section - Navigation */}
                 <section className="flex flex-col justify-start lg:justify-center w-full lg:w-auto lg:min-w-110 space-y-6">
                     <motion.h1
@@ -82,7 +86,7 @@ const About = () => {
                     </motion.p>
 
                     {/* Navigation */}
-                    <nav className="my-6 lg:my-10 flex flex-col space-y-3">
+                    <nav className="w-fit my-6 lg:my-10 flex flex-col space-y-3 relative z-10">
                         {navigationItems.map((item) => (
                             <button
                                 key={item.href}
@@ -123,7 +127,7 @@ const About = () => {
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: 1.3 + index * 0.1, duration: 0.5 }}
-                                className="hover:text-blue-400 transition-colors duration-300"
+                                className="hover:text-blue-400 transition-colors duration-300 relative z-10"
                                 aria-label={social.label}
                             >
                                 <social.icon className="w-6 h-6" />
@@ -157,16 +161,16 @@ const About = () => {
                                 {/* Profile Section */}
                                 <section className="flex flex-col lg:flex-row p-4 space-y-4 lg:space-y-0 lg:space-x-6">
                                     <div className="w-full lg:w-auto flex justify-center lg:justify-start">
-                                        <div className="w-48 h-48 lg:w-56 lg:h-56 overflow-hidden rounded-lg shadow-lg">
+                                        <div className="w-48 h-48 lg:w-56 lg:h-56 overflow-hidden rounded-lg relative z-10">
                                             <img src={Profile} alt="Profile" className="w-full h-full object-cover" />
                                         </div>
                                     </div>
 
                                     <div className="flex flex-col gap-4 flex-1">
                                         <h2 className="text-2xl lg:text-3xl font-semibold text-center lg:text-left">VAT VANNADEN</h2>
-                                        <p className="font-light text-gray-400 text-center lg:text-left">Developer & UI/UX Designer</p>
+                                        <p className="font-light text-gray-400 text-center lg:text-left">Developer & UX/UI Designer</p>
                                         <p className="font-light text-gray-400 text-sm lg:text-base leading-relaxed">
-                                            I'm a full-stack developer and UI/UX designer who loves turning ideas into
+                                            I'm a full-stack developer and UX/UI designer who loves turning ideas into
                                             practical, creative solutions. I'm always looking for opportunities to grow and
                                             expand my skills, and I focus on building innovative projects that blend great
                                             design with solid functionality. Let's connect if you're interested in
@@ -350,7 +354,7 @@ const About = () => {
                                 <div className='p-4 space-y-10' >
                                     <div className='flex flex-col lg:flex-row gap-6 items-start'>
                                         <div className="w-20 h-20 lg:w-24 lg:h-24 flex-shrink-0">
-                                            <img src={RUPP} alt="RUPP Logo" className='w-full h-full object-contain' />
+                                            <img src={RUPP} alt="RUPP Logo" className='w-full h-full object-contain relative z-10' />
                                         </div>
 
                                         <div className='flex flex-col gap-3 flex-1'>
@@ -366,7 +370,7 @@ const About = () => {
 
                                     <div className='flex flex-col lg:flex-row gap-6 items-start'>
                                         <div className="w-20 h-20 lg:w-24 lg:h-24 flex-shrink-0">
-                                            <img src={FirstMay} alt="First May High school" className='w-full h-full object-cover rounded-full' />
+                                            <img src={FirstMay} alt="First May High school" className='w-full h-full object-cover rounded-full relative z-10' />
                                         </div>
 
                                         <div className='flex flex-col gap-3 flex-1'>
