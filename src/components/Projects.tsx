@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FiGithub, FiLinkedin, FiMail, FiExternalLink, FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import ParticlesBg from './ParticlesBg'
