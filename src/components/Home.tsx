@@ -53,8 +53,8 @@ const Home = () => {
               delay: 1,
               duration: 1,
             }}
-            href="/Vat_Vannaden_CV.pdf"
-            download="Vat_Vannaden_CV.pdf"
+            href="/Vat Vannaden.pdf"
+            download="Vat Vannaden.pdf"
             className="w-1/3 text-center border border-gray-400 px-6 py-3 text-gray-300 hover:bg-white hover:text-black transition duration-300 items-center"
             style={{ fontFamily: "var(--font-primary)" }}
           >

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import Face from '../assets/face.jpg';
 import Profile from '../assets/ryo.png';
 import Spotify from '../assets/icons/spotify.png';
 import Manga from '../assets/icons/comic.png';
@@ -162,7 +163,7 @@ const About = () => {
                                 <section className="flex flex-col lg:flex-row p-4 space-y-4 lg:space-y-0 lg:space-x-6">
                                     <div className="w-full lg:w-auto flex justify-center lg:justify-start">
                                         <div className="w-48 h-48 lg:w-56 lg:h-56 overflow-hidden rounded-lg relative z-10">
-                                            <img src={Profile} alt="Profile" className="w-full h-full object-cover" />
+                                            <img src={Face} alt="Profile" className="w-full h-full object-cover object-top" />
                                         </div>
                                     </div>
 

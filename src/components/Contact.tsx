@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-screen h-screen bg-gradient-to-b from-black to-[#020130] flex flex-col items-center justify-center ">
+    <div className="w-screen h-screen bg-gradient-to-b from-black to-[#020130] flex flex-col items-center justify-center overflow-hidden">
       <div className='fixed inset-0 pointer-events-none' style={{ zIndex: 0 }}>
     <ParticlesBg id='Background' />
   </div>
