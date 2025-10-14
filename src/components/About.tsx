@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
-import Face from '../assets/face.jpg';
+import Face from '../assets/img2.jpg';
 import Spotify from '../assets/icons/spotify.png';
 import Manga from '../assets/icons/comic.png';
 import Game from '../assets/icons/game.png';
